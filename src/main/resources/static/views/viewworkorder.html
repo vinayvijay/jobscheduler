@@ -1,0 +1,48 @@
+
+<div ng-controller="viewWorkOrderController">
+
+<div class="row">
+	<div class="col-sm-1">
+		<a  ng-href="#/workorder" style="background-color:pink; color:blue; text-align:left;" > Add WorkOrder </a>
+	</div>
+	
+	<div class="col-sm-1" >
+		<button id="testbtn" style="align:right;" ng-click="testAlgorithm()">Schedule Jobs</button>    
+	</div>
+</div>
+
+  <h3 style="background-color:lavenderblush; color:coral; text-align:center;">List of Work Orders</h3>
+<!-- 	<div class="alert" id="divstatus" style="visibility:hidden">
+	  {{statusmsg}}
+	</div>
+ -->
+	
+  <div>
+  <div class="row" style="border:solid;">
+	<div class="col-sm-1" style="background-color:lavender; color:blue;text-align:center; "><h4>Order Number</h4></div>
+	<div class="col-sm-1" style="background-color:lavenderblush; color:blue;text-align:center; "><h4>Status</h4></div>
+	<div class="col-sm-1" style="background-color:lavender; color:blue;text-align:center; "><h4>Technician</h4></div>
+    <div class="col-sm-3" style="background-color:lavenderblush;color:blue; "><h4>Customer Address</h4></div>
+    <div class="col-sm-1" style="background-color:lavender;color:blue;text-align:center;"><h4>Priority</h4></div>
+    <div class="col-sm-1" style="background-color:lavenderblush;color:blue;text-align:center;"><h4>Job Duration</h4></div>    
+    <div class="col-sm-2" style="background-color:lavender; color:blue;text-align:center; "><h4>Customer Name</h4></div>
+    <div class="col-sm-2" style="background-color:lavenderblush;color:blue;text-align:center; "><h4>Customer Contact</h4></div>
+  </div>
+  </div>
+
+    <div>
+    <div class="row"  ng-repeat="x in records">
+    <div class="col-sm-1" style="background-color:lavender;text-align:center;">{{x.orderNumber}}</div>
+    <div class="col-sm-1" style="background-color:lavenderblush;text-align:center;">{{x.status}}</div>
+    <div class="col-sm-1" style="background-color:lavender;text-align:center;">{{x.assignedTechnician}}</div>
+    <div class="col-sm-3" style="background-color:lavenderblush;">{{x.address}}</div>
+    <div class="col-sm-1" style="background-color:lavender;text-align:center;">{{x.priority}}</div>
+    <div class="col-sm-1" style="background-color:lavenderblush;text-align:center;">{{x.workDuration}}</div>    
+    <div class="col-sm-2" style="background-color:lavender;text-align:center;">{{x.customerName}}</div>
+    <div class="col-sm-2" style="background-color:lavenderblush;text-align:center;">{{x.contact}}</div>
+  </div>
+    
+
+ 
+</div>
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Welcome to JobScheduler Portal</title>
+
+	<meta charset="utf-8">	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/node_modules/angular-material/angular-material.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">	
+		
+ 
+	<!-- 
+		 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-cookies.js" ></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-resource.js" ></script>	
+		<link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.rawgit.com/auth0/angular-jwt/master/dist/angular-jwt.js" ></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js" ></script>  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js">    
+	-->	    
+
+	</head>
+
+	<body ng-app="jobSchedulerApp">
+		 <md-toolbar>
+			 
+			  <div class="md-toolbar-tools" ng-controller="routeController"  ng-cloack>
+
+	        <h1>
+	          <span>Welcome to JobScheduler Portal</span>
+	        </h1><span flex></span>
+	    
+		<div  ng-show="authenticated">	              
+	        <h2>
+	            <span style="text-align:center;">Logged in User: {{username}}</span>
+	           </h2>
+  
+ 
+	        <md-button  class="md-raised" aria-label="Logout" id="logoutbtn" ng-click="logout()">
+	          Logout
+	        </md-button>
+
+	      </div>
+
+	      </div>
+
+		 </md-toolbar>
+		 
+		 
+ 	<!--  <nav class="navbar navbar-default ">
+			<h1 align="center" >Welcome to JobScheduler Portal</h1>
+		</nav> 
+		
+				<div data-ng-include="inc.url" class="container" id="maindiv" ng-controller="routeController">
+		</div>
+		-->	
+		<div ng-view></div>
+
+	
+	<script src="/node_modules/angular/angular.min.js" ></script>	
+	<script src="/node_modules/angular-route/angular-route.js" ></script>
+	<script src="/node_modules/angular-jwt/dist/angular-jwt.min.js" ></script>	
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="/node_modules/bootstrap/dist/js/bootstrap.min.js" ></script>			
+    <script src="/node_modules/angular-resource/angular-resource.js" ></script>
+    <script src="/node_modules/angular-cookies/angular-cookies.min.js" ></script>		
+	<script src="/node_modules/angular-animate/angular-animate.min.js"></script>	
+	<script src="/node_modules/angular-aria/angular-aria.min.js"></script>
+	<script src="/node_modules/angular-messages/angular-messages.min.js"></script>
+ 	<!-- Angular Material Library -->
+    <script src="/node_modules/angular-material/angular-material.min.js"></script>
+    <script src="js/app.js" ></script> 
+		
+	</body>
+</html>

@@ -1,0 +1,55 @@
+<div ng-controller="workOrderController">
+	
+	<div>
+		<a  ng-href="#/viewworkorder" style="background-color:pink; color:blue; text-align:left;" > View WorkOrder </a>
+	</div>
+
+	<h3>Add a work order</h3>
+
+	
+	<div class="alert" id="divstatus" style="visibility:hidden">
+	  {{statusmsg}}
+	</div>
+
+	
+	<form ng-submit="addWorkOrder()" >
+		<div class="form-group">
+			<label>Name</label>
+			<input type="text" ng-model="workorder.customerName" class="form-control"/>
+		</div>
+		<div class="form-group">
+			<label>Contact</label>
+			<input type="text" ng-model="workorder.contact" class="form-control"/>
+		</div>
+		<div class="form-group">
+			<label>Address</label>
+			<input type="text" ng-model="workorder.address" class="form-control"/>
+		</div>
+		<div class="form-group">
+			<label>Priority</label>
+<select  name="priority" ng-model="workorder.priority" >
+<option value="">---Please select---</option> 
+<option  value="MAJOR">MAJOR</option>
+<option value="MINOR">MINOR</option>
+<option value="CRITICAL">CRITICAL</option>
+
+</select>			
+		</div>
+		
+		<div class="form-group">
+		
+    <label for="skill"> Skill </label>
+    <select name="skill" id="skill" ng-model="workorder.skill">
+    <option value="">---Please select---</option> 
+      <option ng-repeat="option in availableOptions" value="{{option}}">{{option}}</option>
+    </select>		
+
+		</div>		
+		
+		<div class="form-group">
+			<label>Duration</label>
+			<input type="text" ng-model="workorder.workDuration" class="form-control"/>
+		</div>
+		<input class="btn btn-success" type="submit" value="Add Work Order"/>
+	</form>
+</div>

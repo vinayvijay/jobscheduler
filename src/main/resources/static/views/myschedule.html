@@ -1,0 +1,38 @@
+
+<div ng-controller="myScheduleController">
+
+  <h3 style="background-color:lavenderblush; color:coral; text-align:center;">My Schedule for the day</h3>
+	<div class="alert" id="divstatus" style="visibility:hidden">
+	  {{statusmsg}}
+	</div>
+  <div>
+  <div class="row">
+	<div class="col-sm-1" style="background-color:lavender; color:blue;text-align:center; "><h4>Order Number</h4></div>
+    <div class="col-sm-2" style="background-color:lavenderblush; color:blue; "><h4>Customer Name</h4></div>
+    <div class="col-sm-2" style="background-color:lavender;color:blue; "><h4>Customer Contact</h4></div>
+    <div class="col-sm-3" style="background-color:lavenderblush;color:blue; "><h4>Customer Address</h4></div>
+    <div class="col-sm-2" style="background-color:lavender;color:blue;"><h4>Priority</h4></div>
+    <div class="col-sm-1" style="background-color:lavenderblush;color:blue;"><h4>Job Duration</h4></div>    
+  </div>
+  </div>
+  </div>
+  
+    <div>
+    <div class="row" ng-repeat="x in records">
+    <div class="col-sm-1" style="background-color:lavender;text-align:center;">{{x.orderNumber}}</div>
+    <div class="col-sm-2" style="background-color:lavenderblush;">{{x.customerName}}</div>
+    <div class="col-sm-2" style="background-color:lavender;">{{x.contact}}</div>
+    <div class="col-sm-3" style="background-color:lavenderblush;">{{x.address}}</div>
+    <div class="col-sm-2" style="background-color:lavender;">{{x.priority}}</div>
+    <div class="col-sm-1" style="background-color:lavenderblush;">{{x.workDuration}}</div>    
+  </div>
+  
+  
+      <tr >
+        <td></td>
+        <td></td>
+    </tr>
+  
+  
+</div>
+
