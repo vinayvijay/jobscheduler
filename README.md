@@ -4,6 +4,7 @@ A demo web application deployable on cloud using spring boot, angularjs, spring,
 **Problem Statement**: Service N job orders using M technicians optimally under a set of constraints
 
 **Solution**: Simple algorithm to solve travelling salesman problem (TSP) 
+![alt text](https://github.com/vinayvijay/jobscheduler/tree/master/images/tsp-solution.png "TSP Algorithm")
 ***
 **Technology Stack** 
 * Spring Boot 
@@ -19,6 +20,9 @@ A demo web application deployable on cloud using spring boot, angularjs, spring,
 ***
 
 **Layered Architecture** 
+
+![alt text](https://github.com/vinayvijay/jobscheduler/tree/master/images/architecture.png "Architecture")
+
   UI              - HTML, Angularjs, Ng-JWT
   Servlet Filter  - Spring security, JWT filter
   ReST services   - Spring ReST
@@ -50,4 +54,5 @@ A demo web application deployable on cloud using spring boot, angularjs, spring,
 
 ***
 **Source code packages**
-![alt text](https://github.com/vinayvijay/jobscheduler/new/master/images/icon48.png)
+
+![alt text](https://github.com/vinayvijay/jobscheduler/tree/master/images/package.png "Source paackage view")
