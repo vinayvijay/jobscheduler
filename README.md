@@ -4,7 +4,7 @@ A demo web application deployable on cloud using spring boot, angularjs, spring,
 **Problem Statement**: Service N job orders using M technicians optimally under a set of constraints
 
 **Solution**: Simple algorithm to solve travelling salesman problem (TSP) 
-![ScreenShot](images/tsp-solution.png)
+![ScreenShot](images/tsp-solution.png "TSP Algorithm")
 ***
 **Technology Stack** 
 * Spring Boot 
@@ -21,7 +21,7 @@ A demo web application deployable on cloud using spring boot, angularjs, spring,
 
 **Layered Architecture** 
 
-![ScreenShot](images/architecture.png)
+![ScreenShot](images/architecture.png "Architecture view")
 
   UI              - HTML, Angularjs, Ng-JWT
   Servlet Filter  - Spring security, JWT filter
