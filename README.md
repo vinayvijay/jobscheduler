@@ -31,6 +31,12 @@ A demo web application deployable on cloud using spring boot, angularjs, spring,
 **Deployment strategy**: Deployed on Cloud Foundry using Spring tool suite along with gradle. 
 ***
 **Demo URL**: http://jobscheduler.cfapps.io/#/login
+
+Users
+* admin/admin123 (with customer care role)
+* tech1/demo (with technician role)
+* tech2/demo (with technician role)
+
 ***
 **ReST APIs**
 * authenticate(UserDTO) – /jobscheduler/ authenticate – HTTP Post
